@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    background: black;
+    height: 100vh;
+}
+
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#FFF2C2,#F2FF2C);
+/*
+    background: linear-gradient(45deg,transparent,transparent 40%,#F2FF2C);*/
+    border-radius: 50%;
+    animation: circleGlow 2s linear infinite;
+/*    box-shadow: 0 0 40px #FFF2C2;*/
+}
+
+
+@keyframes circleGlow{
+    from{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.circle:after{
+    content: "";
+    position: absolute;
+    top:10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    background: black;
+
+}
+
+.circle:before{
+    content: "";
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background:linear-gradient(#FFF2C2,#F2FF2C);
+    filter: blur(30px);
+
+
+}
+
+/*Circle2*/
+
+.circle2{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg,transparent,transparent 45%,#F2FF2C);
+    border-radius: 50%;
+    animation: circleGlow2 2s linear infinite;
+/*    box-shadow: 0 0 40px #FFF2C2;*/
+}
+
+
+
+@keyframes circleGlow2{
+    from{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+.circle2:after{
+    content: "";
+    position: absolute;
+    top:8px;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    border-radius: 50%;
+    background: black;
+
+}
+
+.circle2:before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg,transparent,transparent 45%,#F2FF2C);
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 50%;
+    filter: blur(30px);
+
+
+}
+
+.moon{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background: transparent;
+/*    box-shadow: -10px 10px 0 7px #F2FF2C;*/
+    box-shadow: -30px 0 2
+        0px 0 #F2FF2C;
+    border-radius: 50%;
+    animation: moonGlow 3s linear infinite;
+
+}
+
+
+@keyframes moonGlow{
+    0%{
+
+       filter: hue-rotate(0deg);
+
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
