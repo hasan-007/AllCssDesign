@@ -133,7 +133,7 @@ body{
 
     }
     100%{
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(0deg);
     }
 }
 
